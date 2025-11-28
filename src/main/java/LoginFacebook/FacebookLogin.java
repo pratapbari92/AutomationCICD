@@ -14,9 +14,9 @@ public class FacebookLogin {
 
 
 		public static void main(String[] args) {
-			
-	WebDriverManager.chromedriver().setup();
-			
+		
+	     // adding something in this code after login code
+
 			WebDriver driver =new ChromeDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 			driver.manage().window().maximize();
@@ -26,6 +26,10 @@ public class FacebookLogin {
 			driver.findElement(By.id("pass")).sendKeys("406721");
 			
 			driver.findElement(By.xpath("//button[@type='submit']")).click();
+			
+			//new things added to check Git repo to Jenkins connection through Webhook plugins
+			//click on friends
+			driver.findElement(By.xpath("(//span[contains(text(),'Friends')]")).click();
 		
 
 
