@@ -28,8 +28,8 @@ public class FacebookLogin {
 			driver.findElement(By.xpath("//button[@type='submit']")).click();
 			
 			//new things added to check Git repo to Jenkins connection through Webhook plugins
-			//click on friends
-			driver.findElement(By.xpath("(//span[contains(text(),'Friends')]")).click();
+			//click on friends //Any way we are commiting below code as facebook there problem of voice recognition authenticaion always due to that below line is not working as UI is not opening
+			//driver.findElement(By.xpath("(//span[contains(text(),'Friends')]")).click();
 		
 
 
